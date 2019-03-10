@@ -105,11 +105,7 @@ header .main-header-content a i{
 }
 
 .circle{
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    border-radius: 100px;
-    background-color: #336063;
+    display: none
 }
 
 .conf-style{
@@ -251,6 +247,70 @@ footer p span{
 }
 
 
+/* mini screens responsiveness
+should remove the map and change the concept to table-based for more effective experience
+ */
+
+@media (max-width: 320px){
+    #map-buttons{
+        position: absolute;
+        top: 3810px;
+        left: 0px;
+    }
+}
+@media (min-width: 321px) and (max-width: 325px){
+    #map-buttons{
+        position: absolute;
+        top: 3780px;
+        left: 0px;
+    }
+}
+@media (min-width: 326px) and (max-width: 339px){
+    #map-buttons{
+        position: absolute;
+        top: 3685px;
+        left: 0px;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 359px){
+    #map-buttons{
+        position: absolute;
+        top: 3600px;
+        left: 0px;
+    }
+}
+@media (min-width: 360px) and (max-width: 378px){
+    #map-buttons{
+        position: absolute;
+        top: 3550px;
+        left: 20px;
+    }
+}
+
+@media (min-width: 379px) and (max-width: 401px){
+    #map-buttons{
+        position: absolute;
+        top: 3450px;
+        left: 20px;
+    }
+}
+@media (min-width: 402px) and (max-width: 432px){
+    #map-buttons{
+        position: absolute;
+        top: 3370px;
+        left: 50px;
+    }
+}
+@media (min-width: 433px) and (max-width: 483px){
+    #map-buttons{
+        position: absolute;
+        top: 3270px;
+        left: 80px;
+    }
+}
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -338,21 +398,6 @@ footer p span{
 
     .conf-clicked, .circle-clicked{
         color: #BCA045;
-    }
-
-    #lecturers{position: relative;}
-    #bcgrnd1-svg{
-        width: 150%;
-        height: 300%;
-        z-index: -1;
-        bottom: -100px;
-        position: absolute;
-        background-image: url(../img/bcgrnd1.svg);
-        background-repeat: no-repeat;
-        background-position: left bottom;
-    }
-    footer p{
-        text-align: left;
     }
 
 }
